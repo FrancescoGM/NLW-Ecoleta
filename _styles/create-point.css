@@ -1,0 +1,149 @@
+form {
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 64px;
+    border-radius: 8px;
+    max-width: 730px;
+    box-sizing: border-box;
+}
+
+form h1 {
+    font-size: 36px;
+    max-width: 280px;
+}
+
+form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input,
+select {
+    background-color: #f0f0f0;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field+.field {
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 48px;
+    margin-top: 24px;
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
+
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#page-create-point header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a {
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span {
+    background-image: url('../_icons/arrow-left.svg');
+    width: 20px;
+    height: 24px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li {
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.items-grid li:hover {
+    background-color: rgb(204, 255, 184);
+}
+
+.items-grid li span {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.items-grid li.selected {
+    border: 2px solid #2fb86e;
+    background-color: rgb(204, 255, 184);
+}
+
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
+}
