@@ -1,0 +1,27 @@
+{
+    "name": "NLW-Ecoleta",
+    "version": "1.0.0",
+    "description": "Projeto de acompanhamento com a next level week da rocketseat.",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FrancescoGM/NLW-Ecoleta.git"
+    },
+    "keywords": [],
+    "author": "Francesco Gonzalez Müller",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/FrancescoGM/NLW-Ecoleta/issues"
+    },
+    "homepage": "https://github.com/FrancescoGM/NLW-Ecoleta#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nunjucks": "^3.2.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
