@@ -28,7 +28,13 @@ function getCities(event) {
     citiesSelect.innerHTML = ""
     if (document.querySelector('select[name="uf"]').value != "") {
         citiesSelect.disabled = false
-        getFetch(url, citiesSelect)
+        fetch(url)
+            .then((response) => response.json())
+            .then((values) => {
+                values.forEach((value => {
+                    citiesSelect.innerHTML += `<option value="${value.nome}">${value.nome}</option>`
+                }))
+            })
     } else {
         citiesSelect.disabled = true
     }

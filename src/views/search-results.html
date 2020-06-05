@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% set pageId = 'page-search-results' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/_styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    {% include "partials/page-header.html" %}
+    <main>
+        {% if placeLength > 0 %}
+            <h4>
+                <strong>
+                    {{ placeLength }}
+                    pontos
+                </strong>encontrados.
+            </h4>
+            <div class="cards">
+                {% for place in places %}
+                    <div class="card">
+                        <img src="{{ place.image }}" alt="Colectoria">
+                        <h2>{{ place.name }}</h2>
+                        <h3>{{ place.items }}</h3>
+                        <p>
+                            {{ place.city }},
+                            {{ place.state }}<br>
+                            {{ place.address }}<br>
+                            N&deg;{{ place.address2 }}
+                            <br>
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <h4>
+                <strong>Nenhum</strong>
+                local encontrado</h4>
+        {% endif %}
+    </main>
+{% endblock content %}
+{% block scripts %}
+    <script src="/_script/create-point.js"></script>
+    <script src="/_script/itens.js"></script>
+{% endblock scripts %}
