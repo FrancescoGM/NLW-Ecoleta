@@ -1,6 +1,6 @@
 document.querySelector('select[name="uf"]').addEventListener('change', getCities)
 
-function getFetch(url, callback) {
+function getFetch(url, object) {
     fetch(url)
         .then((response) => response.json())
         .then((values) => {
