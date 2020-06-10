@@ -2,9 +2,10 @@
     "name": "NLW-Ecoleta",
     "version": "1.0.0",
     "description": "Projeto de acompanhamento com a next level week da rocketseat.",
-    "main": "src/server.js",
+    "main": "/src/server.js",
     "scripts": {
-        "start": "nodemon src/server.js"
+        "install": "npm install express --save -version ^4.17.1",
+        "start": "node src/server.js"
     },
     "repository": {
         "type": "git",
