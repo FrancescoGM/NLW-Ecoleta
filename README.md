@@ -2,7 +2,7 @@
     <img src="../NLW-Ecoleta/public/_icons/logo.svg">
 </h1>
 <h1 align=center>
-    <img src="../../../Programming/next-level-week/NLW-Ecoleta/test/Peek%2010-06-2020%2007-59.gif">
+    <img src="https://giphy.com/gifs/Tfk3ZL8sy2GaJCyLXZ">
 </h1>
 
 ---
