@@ -11,13 +11,13 @@
     <a href="https://ecoleta-coleta-de-residuos.herokuapp.com/">Acessar demonstração</a>
 </h3>
 
-# 🍁 Ecoleta - Seu marketplace de coleta de resíduos
+# 🍁  Ecoleta - Seu marketplace de coleta de resíduos
 
 O **ecoleta** foi desenvolvido devido na **next level week** da **rocketseat** e foca em registrar mundo a fora os locais para o **descartamento correto** de resíduos, assim ajudando o **meio ambiente** e facilitando o recolhimento dos resíduos.
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## 🚀  Tecnologias utilizadas
 O projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
@@ -28,7 +28,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 ---
 
-## 📁 Como baixar o projeto
+## 📁  Como baixar o projeto
 
 ```bash
     # Para clonar o repositório
