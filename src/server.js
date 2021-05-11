@@ -52,7 +52,7 @@ server.get('/search', (request, response) => {
     if (search == "") {
         return response.render("search-results.html", { placeLength: 0 })
     } else {
-        db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function(err, rows) {
+        db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function (err, rows) {
             if (err) {
                 return console.log(err)
             } else {
